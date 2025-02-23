@@ -1,0 +1,100 @@
+/* Scene background */
+.scene {
+    -fx-background-color: #005844;
+    -fx-padding: 20;
+}
+
+/* ComboBox Styles */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #005844;
+    -fx-border-color: #005844;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-padding: 8px;
+}
+
+.combo-box:hover {
+    -fx-border-color: #003d33;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #005844;
+}
+
+/* Selected ComboBox item */
+.combo-box .list-cell:filled {
+    -fx-background-color: #005844;
+    -fx-text-fill: white;
+}
+
+/* TextField Styles */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #005844;
+    -fx-border-color: #005844;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-font-size: 14px;
+    -fx-pref-width: 250px;
+    -fx-padding: 8px;
+}
+
+.text-field:focused {
+    -fx-border-color: #003d33;
+    -fx-background-color: #e1f5e1;
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #005844;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-border-color: #003d33;
+}
+
+.button:hover {
+    -fx-background-color: #003d33;
+}
+
+/* Style for TextArea */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #005844;
+    -fx-border-color: #005844;
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-pref-height: 120px;
+}
+
+/* Layout: VBox container for elements */
+.vbox {
+    -fx-spacing: 15;
+    -fx-alignment: center;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0;
+}
+
+/* General padding for elements */
+.text-field, .combo-box, .button, .text-area {
+    -fx-padding: 8px;
+}
+
+/* TextArea focused state */
+.text-area:focused {
+    -fx-border-color: #003d33;
+    -fx-background-color: #e1f5e1;
+}
