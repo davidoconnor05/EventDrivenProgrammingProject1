@@ -10,7 +10,7 @@ import java.io.*;
 import java.net.Socket;
 
 
-public class LectureTimetable extends Application { // Extend Application
+public class LectureSchedulerClient extends Application { // Extend Application
     private TextArea responseArea;
     private ComboBox<String> actionBox;
     private TextField moduleField;
@@ -90,11 +90,11 @@ public class LectureTimetable extends Application { // Extend Application
     }
 
     private void sendRequest() {
-        /*if (socket == null || socket.isClosed()) {
+        if (socket == null || socket.isClosed()) {
             responseArea.appendText("Not connected to server!\n");
             return;
         }
-        */
+
         String action = actionBox.getValue();
         String module = moduleField.getText();
         String date = dateBox.getValue();
@@ -107,10 +107,6 @@ public class LectureTimetable extends Application { // Extend Application
             responseArea.appendText("Please fill in all required fields!\n");
             return;
         }
-
-        String message = action + "; " + module + "; " + date + "; " + timeStart + "; " + timeEnd + "; " + room;
-        out.println(message);
-        responseArea.appendText(message);
 
         try {
             String response = in.readLine();
@@ -133,6 +129,6 @@ public class LectureTimetable extends Application { // Extend Application
     }
 
     public static void main(String[] args) {
-        launch(args); // Call launch() to start JavaFX application
+        launch(args);
     }
 }
